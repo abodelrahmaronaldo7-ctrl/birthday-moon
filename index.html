@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>ادخلي الباسورد ❤️</title>
+
+<style>
+body{
+ text-align:center;
+ font-family:Arial;
+ background:#111;
+ color:white;
+ margin-top:100px;
+}
+input,button{
+ padding:10px;
+ margin:10px;
+ font-size:18px;
+}
+</style>
+
+<script>
+function checkPass(){
+ var pass = document.getElementById("pass").value;
+ if(pass=="1234"){
+   window.location="birthday.html";
+ }else{
+   alert("الباسورد غلط");
+ }
+}
+</script>
+
+</head>
+
+<body>
+
+<h2>🎁 مفاجأة ليكي</h2>
+<input type="password" id="pass" placeholder="الباسورد">
+<br>
+<button onclick="checkPass()">افتحي</button>
+
+</body>
+</html>

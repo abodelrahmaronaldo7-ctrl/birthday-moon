@@ -2,55 +2,63 @@
 <html lang="ar">
 <head>
 <meta charset="UTF-8">
-<title>🎂 عيد ميلاد سعيد 🎂</title>
-
+<title>عيد ميلاد سعيد 🎂</title>
 <style>
-body{
+body {
   margin:0;
-  font-family:Arial;
+  font-family: Arial, sans-serif;
+  background: #d32f2f; /* أحمر */
   color:white;
-  text-align:center;
-
-  /* خلفية التورتة */
-  background:url("cake.png") no-repeat center center fixed;
-  background-size:cover;
+  text-align: center;
 }
 
-/* طبقة تغميق عشان النص يبقى واضح */
-.overlay{
-  background:rgba(0,0,0,0.55);
-  min-height:100vh;
-  padding:20px;
+h1 {
+  margin-top: 30px;
+  font-size: 40px;
 }
 
-h1{
-  margin-top:20px;
+#cake {
+  margin: 20px auto;
+  width: 250px;
 }
 
-#counter{
-  font-size:20px;
-  line-height:1.8;
-  margin-top:20px;
+#age {
+  font-size: 28px;
+  margin: 30px 0;
 }
 
-.nextBtn{
+.time-box {
+  display: inline-block;
+  margin: 0 10px;
+}
+.time-box span {
+  display:block;
+  font-size: 36px;
+  font-weight: bold;
+}
+.time-box p {
+  margin:0;
+  font-size:16px;
+}
+
+.text{
+  margin:20px 20px;
+  font-size:18px;
+  line-height:1.5;
+}
+
+a {
   display:inline-block;
   margin-top:30px;
-  padding:12px 20px;
-  background:#ff4d6d;
-  color:white;
-  border-radius:10px;
+  font-size:20px;
+  color:yellow;
   text-decoration:none;
-  font-size:18px;
 }
 </style>
 </head>
-
 <body>
 
-<div class="overlay">
 <h1>🎉 كللللل سنه وانت ب الف صحه و سلامة! 🎉</h1>
-<img id="cake" src="images/cake.png" alt="تورتة العيد ميلاد">
 
 <!-- العداد -->
 <div id="age">
@@ -127,6 +135,4 @@ updateAge();
 </script>
 
 </body>
-
 </html>
-

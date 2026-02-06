@@ -51,7 +51,23 @@ a {
   color:yellow;
   text-decoration:none;
 }
+/* تصميم الأزرار */
+.navButtons a{
+  display:block;
+  margin:15px auto;  /* يسيب مسافة بين الأزرار */
+  width:fit-content;
+}
+
+.nextBtn{
+  padding:12px 25px;
+  background:#ff4d6d;
+  color:white;
+  border-radius:10px;
+  text-decoration:none;
+  font-size:18px;
+}
 </style>
+< /style>
 </head>
 <body>
 
@@ -84,10 +100,12 @@ a {
 استمتع بالذكريات واللحظات الجميلة ❤️
 </div>
 
-<a href="birthday.html">⬅️ العودة للصفحة الأولى</a>
+<div class="navButtons">
+  <a href="birthday1.html" class="nextBtn">
+    ⬅ الرجوع للصفحة الأولى
+  </a>
 
-</body>
-</html>
-<a href="birthday3.html" class="nextBtn">
-➜ مشاهدة الفيديو
-</a>
+  <a href="birthday3.html" class="nextBtn">
+    ➜ مشاهدة الفيديو
+  </a>
+</div>
